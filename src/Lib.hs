@@ -13,29 +13,10 @@ import           Network.Transport.TCP                              (createTrans
                                                                      defaultTCPParameters)
 import           System.Environment                                 (getArgs)
 import           System.Exit
-
-primes :: [Integer]
-primes = primes' (2:[3,5..])
-  where
-    primes' (x:xs) = x : primes' (filter (notDivisorOf x) xs)
-    notDivisorOf d n = n `mod` d /= 0
-
-factors :: [Integer] -> Integer -> [Integer]
-factors qs@(p:ps) n
-    | n <= 1 = []
-    | m == 0 = p : factors qs d
-    | otherwise = factors ps n
-  where
-    (d,m) = n `divMod` p
-
-primeFactors :: Integer -> [Integer]
-primeFactors = factors primes
-
-numPrimeFactors :: Integer -> Integer
-numPrimeFactors = fromIntegral . length . primeFactors
+import           System.Process
 
 doWork :: Integer -> Integer
-doWork = numPrimeFactors
+doWork n = 1
 
 worker :: ( ProcessId, ProcessId) -> Process ()
 worker (manager, workQueue) = do
@@ -49,7 +30,9 @@ worker (manager, workQueue) = do
       receiveWait
         [ match $ \n  -> do
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] given work: " ++ show n
-
+            liftIO $ callProcess "git" ["clone", "https://github.com/JenningsIRE/file-server-api"]
+            liftIO $ callProcess "argon" ["file-server-api"]
+            liftIO $ callProcess "rm" ["-rf", "file-server-api"]
             send manager (doWork n)
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] finished work."
             go us
