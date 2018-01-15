@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a7561e-fc08-4093-82f3-5d3d1f652b4e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Time vs Number of Workers.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lib.hs" afterPath="$PROJECT_DIR$/src/Lib.hs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.stack-work/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,12 +17,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lib.hs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lib.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lib.hs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/argon/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding>
+                  <marker date="1511912805362" expanded="true" signature="2560:4291" ph="[...]" />
+                  <marker date="1511912805362" expanded="true" signature="2627:2766" ph="{&quot;path&quot;: &quot;src/Argon/Types.hs&quot;...}" />
+                  <marker date="1511912805362" expanded="true" signature="2770:3138" ph="{&quot;path&quot;: &quot;src/Argon/Visitor.hs&quot;...}" />
+                  <marker date="1511912805362" expanded="true" signature="2786:3076" ph="[...]" />
+                  <marker date="1511912805362" expanded="true" signature="3142:3525" ph="{&quot;path&quot;: &quot;src/Argon/Parser.hs&quot;...}" />
+                  <marker date="1511912805362" expanded="true" signature="3158:3464" ph="[...]" />
+                  <marker date="1511912805362" expanded="true" signature="3529:3834" ph="{&quot;path&quot;: &quot;src/Argon/Formatters.hs&quot;...}" />
+                  <marker date="1511912805362" expanded="true" signature="3545:3769" ph="[...]" />
+                  <marker date="1511912805362" expanded="true" signature="3838:4067" ph="{&quot;path&quot;: &quot;src/Argon/Results.hs&quot;...}" />
+                  <marker date="1511912805362" expanded="true" signature="3854:4005" ph="[...]" />
+                  <marker date="1511912805362" expanded="true" signature="4071:4215" ph="{&quot;path&quot;: &quot;src/Argon/Loc.hs&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="360">
+                <caret line="24" column="123" lean-forward="false" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="123" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -44,6 +83,7 @@
         <option value="$PROJECT_DIR$/stack.yaml" />
         <option value="$PROJECT_DIR$/argon/app/Main.hs" />
         <option value="$PROJECT_DIR$/src/Lib.hs" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -232,12 +272,12 @@
       <updated>1515909385347</updated>
       <workItem from="1515909389027" duration="2720000" />
       <workItem from="1515912841118" duration="37767000" />
-      <workItem from="1516011437659" duration="1329000" />
+      <workItem from="1516011437659" duration="4122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46982000" />
+    <option name="totallyTimeSpent" value="49775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="23" width="840" height="961" extended-state="0" />
@@ -465,16 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/argon/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/argon/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -530,16 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -606,6 +626,40 @@
         <state relative-caret-position="144">
           <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1511912805362" expanded="true" signature="2560:4291" ph="[...]" />
+              <marker date="1511912805362" expanded="true" signature="2627:2766" ph="{&quot;path&quot;: &quot;src/Argon/Types.hs&quot;...}" />
+              <marker date="1511912805362" expanded="true" signature="2770:3138" ph="{&quot;path&quot;: &quot;src/Argon/Visitor.hs&quot;...}" />
+              <marker date="1511912805362" expanded="true" signature="2786:3076" ph="[...]" />
+              <marker date="1511912805362" expanded="true" signature="3142:3525" ph="{&quot;path&quot;: &quot;src/Argon/Parser.hs&quot;...}" />
+              <marker date="1511912805362" expanded="true" signature="3158:3464" ph="[...]" />
+              <marker date="1511912805362" expanded="true" signature="3529:3834" ph="{&quot;path&quot;: &quot;src/Argon/Formatters.hs&quot;...}" />
+              <marker date="1511912805362" expanded="true" signature="3545:3769" ph="[...]" />
+              <marker date="1511912805362" expanded="true" signature="3838:4067" ph="{&quot;path&quot;: &quot;src/Argon/Results.hs&quot;...}" />
+              <marker date="1511912805362" expanded="true" signature="3854:4005" ph="[...]" />
+              <marker date="1511912805362" expanded="true" signature="4071:4215" ph="{&quot;path&quot;: &quot;src/Argon/Loc.hs&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="24" column="123" lean-forward="false" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="123" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
