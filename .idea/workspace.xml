@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a7561e-fc08-4093-82f3-5d3d1f652b4e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/argon" afterPath="$PROJECT_DIR$/argon" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lib.hs" afterPath="$PROJECT_DIR$/src/Lib.hs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stack.yaml" afterPath="$PROJECT_DIR$/stack.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.stack-work/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,58 +19,8 @@
       <file leaf-file-name="Lib.hs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lib.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1132">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stack.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/argon/stack.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.hs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Main.hs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stack.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stack.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cyclo.cabal" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cyclo.cabal">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="-140">
+              <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,6 +42,7 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/cyclo.cabal" />
         <option value="$PROJECT_DIR$/stack.yaml" />
+        <option value="$PROJECT_DIR$/argon/app/Main.hs" />
         <option value="$PROJECT_DIR$/src/Lib.hs" />
       </list>
     </option>
@@ -141,6 +91,12 @@
               <item name="cyclo" type="b2602c69:ProjectViewProjectNode" />
               <item name="cyclo" type="462c0819:PsiDirectoryNode" />
               <item name="argon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyclo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyclo" type="462c0819:PsiDirectoryNode" />
+              <item name="argon" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cyclo" type="b2602c69:ProjectViewProjectNode" />
@@ -280,7 +236,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40487000" />
+    <option name="totallyTimeSpent" value="44866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="23" width="840" height="961" extended-state="0" />
@@ -338,7 +294,300 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <marker date="1515995288296" expanded="true" signature="761:821" ph="image: &lt;1 key&gt;" />
+            <marker date="1515995288296" expanded="true" signature="770:821" ph="container: &lt;2 keys&gt;" />
+            <marker date="1515995288296" expanded="true" signature="791:796" ph="cyclo" />
+            <marker date="1515995288296" expanded="true" signature="807:821" ph="fpco/stack-run" />
+            <marker date="1515995288296" expanded="true" signature="1499:1522" ph="packages: &lt;2 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1511:1514" ph="." />
+            <marker date="1515995288296" expanded="true" signature="1517:1522" ph="argon" />
+            <marker date="1515995288296" expanded="true" signature="1631:1734" ph="extra-deps: &lt;5 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1645:1659" ph="docopt-0.7.0.4" />
+            <marker date="1515995288296" expanded="true" signature="1662:1677" ph="hierarchy-0.3.1" />
+            <marker date="1515995288296" expanded="true" signature="1680:1697" ph="pipes-files-0.1.1" />
+            <marker date="1515995288296" expanded="true" signature="1700:1719" ph="posix-paths-0.2.1.0" />
+            <marker date="1515995288296" expanded="true" signature="1722:1734" ph="fail-4.9.0.0" />
+            <marker date="1515995288296" expanded="true" signature="1801:1810" ph="flags: {0 keys}" />
+            <marker date="1515995288296" expanded="true" signature="1865:1886" ph="extra-package-dbs: [0 items]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cyclo.cabal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cabal.config" />
+    <entry file="file://$PROJECT_DIR$/cyclo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Main.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/stack-7.8.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/stack.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/SYB/Utils.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Cabal.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Formatters.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Loc.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Parser.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Preprocess.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Results.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Types.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-637">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Visitor.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/src/Argon/Walker.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/test/Spec.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/test/HLint.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/USAGE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/Setup.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/argon.cabal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="70" column="20" lean-forward="true" selection-start-line="69" selection-start-column="2" selection-end-line="70" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cyclo.cabal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <marker date="1515995288296" expanded="true" signature="761:821" ph="image: &lt;1 key&gt;" />
+            <marker date="1515995288296" expanded="true" signature="770:821" ph="container: &lt;2 keys&gt;" />
+            <marker date="1515995288296" expanded="true" signature="791:796" ph="cyclo" />
+            <marker date="1515995288296" expanded="true" signature="807:821" ph="fpco/stack-run" />
+            <marker date="1515995288296" expanded="true" signature="1499:1522" ph="packages: &lt;2 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1511:1514" ph="." />
+            <marker date="1515995288296" expanded="true" signature="1517:1522" ph="argon" />
+            <marker date="1515995288296" expanded="true" signature="1631:1734" ph="extra-deps: &lt;5 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1645:1659" ph="docopt-0.7.0.4" />
+            <marker date="1515995288296" expanded="true" signature="1662:1677" ph="hierarchy-0.3.1" />
+            <marker date="1515995288296" expanded="true" signature="1680:1697" ph="pipes-files-0.1.1" />
+            <marker date="1515995288296" expanded="true" signature="1700:1719" ph="posix-paths-0.2.1.0" />
+            <marker date="1515995288296" expanded="true" signature="1722:1734" ph="fail-4.9.0.0" />
+            <marker date="1515995288296" expanded="true" signature="1801:1810" ph="flags: {0 keys}" />
+            <marker date="1515995288296" expanded="true" signature="1865:1886" ph="extra-package-dbs: [0 items]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lib.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lib.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <marker date="1515995288296" expanded="true" signature="761:821" ph="image: &lt;1 key&gt;" />
+            <marker date="1515995288296" expanded="true" signature="770:821" ph="container: &lt;2 keys&gt;" />
+            <marker date="1515995288296" expanded="true" signature="791:796" ph="cyclo" />
+            <marker date="1515995288296" expanded="true" signature="807:821" ph="fpco/stack-run" />
+            <marker date="1515995288296" expanded="true" signature="1499:1522" ph="packages: &lt;2 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1511:1514" ph="." />
+            <marker date="1515995288296" expanded="true" signature="1517:1522" ph="argon" />
+            <marker date="1515995288296" expanded="true" signature="1631:1734" ph="extra-deps: &lt;5 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1645:1659" ph="docopt-0.7.0.4" />
+            <marker date="1515995288296" expanded="true" signature="1662:1677" ph="hierarchy-0.3.1" />
+            <marker date="1515995288296" expanded="true" signature="1680:1697" ph="pipes-files-0.1.1" />
+            <marker date="1515995288296" expanded="true" signature="1700:1719" ph="posix-paths-0.2.1.0" />
+            <marker date="1515995288296" expanded="true" signature="1722:1734" ph="fail-4.9.0.0" />
+            <marker date="1515995288296" expanded="true" signature="1801:1810" ph="flags: {0 keys}" />
+            <marker date="1515995288296" expanded="true" signature="1865:1886" ph="extra-package-dbs: [0 items]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -376,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Main.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cyclo.cabal">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -404,22 +645,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stack.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <marker date="1515995288296" expanded="true" signature="761:821" ph="image: &lt;1 key&gt;" />
+            <marker date="1515995288296" expanded="true" signature="770:821" ph="container: &lt;2 keys&gt;" />
+            <marker date="1515995288296" expanded="true" signature="791:796" ph="cyclo" />
+            <marker date="1515995288296" expanded="true" signature="807:821" ph="fpco/stack-run" />
+            <marker date="1515995288296" expanded="true" signature="1499:1522" ph="packages: &lt;2 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1511:1514" ph="." />
+            <marker date="1515995288296" expanded="true" signature="1517:1522" ph="argon" />
+            <marker date="1515995288296" expanded="true" signature="1631:1734" ph="extra-deps: &lt;5 items&gt;" />
+            <marker date="1515995288296" expanded="true" signature="1645:1659" ph="docopt-0.7.0.4" />
+            <marker date="1515995288296" expanded="true" signature="1662:1677" ph="hierarchy-0.3.1" />
+            <marker date="1515995288296" expanded="true" signature="1680:1697" ph="pipes-files-0.1.1" />
+            <marker date="1515995288296" expanded="true" signature="1700:1719" ph="posix-paths-0.2.1.0" />
+            <marker date="1515995288296" expanded="true" signature="1722:1734" ph="fail-4.9.0.0" />
+            <marker date="1515995288296" expanded="true" signature="1801:1810" ph="flags: {0 keys}" />
+            <marker date="1515995288296" expanded="true" signature="1865:1886" ph="extra-package-dbs: [0 items]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Main.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argon/app/Main.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1132">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="-140">
+          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding />
         </state>
       </provider>
