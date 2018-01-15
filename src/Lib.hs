@@ -14,9 +14,16 @@ import           Network.Transport.TCP                              (createTrans
 import           System.Environment                                 (getArgs)
 import           System.Exit
 import           System.Process
+import           System.IO
+import           Data.List.Split
+import           System.Process
+import           System.FilePath ((</>))
+import           System.Directory (doesDirectoryExist, getDirectoryContents, getCurrentDirectory)
+import           Data.Time.Clock
 
-doWork :: Integer -> Integer
-doWork n = 1
+doWork ::  Integer -> IO String
+doWork n = readProcess "argon" ["bin"] ""
+
 
 worker :: ( ProcessId, ProcessId) -> Process ()
 worker (manager, workQueue) = do
@@ -30,10 +37,8 @@ worker (manager, workQueue) = do
       receiveWait
         [ match $ \n  -> do
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] given work: " ++ show n
-            liftIO $ callProcess "git" ["clone", "https://github.com/JenningsIRE/file-server-api"]
-            liftIO $ callProcess "argon" ["file-server-api"]
-            liftIO $ callProcess "rm" ["-rf", "file-server-api"]
-            send manager (doWork n)
+            work <- liftIO $ doWork n
+            send manager (work)
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] finished work."
             go us
         , match $ \ () -> do
@@ -45,7 +50,7 @@ remotable ['worker]
 
 manager :: Integer    -- The number range we wish to generate work for (there will be n work packages)
         -> [NodeId]   -- The set of cloud haskell nodes we will initalise as workers
-        -> Process Integer
+        -> Process String
 manager n workers = do
   us <- getSelfPid
 
@@ -76,14 +81,14 @@ manager n workers = do
 -- recursively, decrementing the integer passed until it finally returns the accumulated value in go:acc. Thus, it will
 -- be called n times, consuming n messages from the message queue, corresponding to the n messages sent by workers to
 -- the manager message queue.
-sumIntegers :: Int -> Process Integer
-sumIntegers = go 0
+sumIntegers :: Int -> Process String
+sumIntegers = go ""
   where
-    go :: Integer -> Int -> Process Integer
-    go !acc 0 = return acc
-    go !acc n = do
+    go :: String -> Int -> Process String
+    go x 0 = return x
+    go x n = do
       m <- expect
-      go (acc + m) (n - 1)
+      go (x ++ m ++ " ") (n - 1)
 
 rtable :: RemoteTable
 rtable = Lib.__remoteTable initRemoteTable
@@ -100,9 +105,13 @@ someFunc = do
     ["manager", host, port, n] -> do
       putStrLn "Starting Node as Manager"
       backend <- initializeBackend host port rtable
+      start <- getCurrentTime
       startMaster backend $ \workers -> do
         result <- manager (read n) workers
         liftIO $ print result
+      end <- getCurrentTime
+      let time = diffUTCTime end start
+      putStrLn $ show time
     ["worker", host, port] -> do
       putStrLn "Starting Node as Worker"
       backend <- initializeBackend host port rtable
