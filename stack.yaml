@@ -19,7 +19,7 @@ resolver: lts-6.3
 #allow-newer: true
 
 docker:
-  enable: true # warning!
+  enable: false # warning!
 
 # stack image container
 image:

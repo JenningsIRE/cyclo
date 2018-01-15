@@ -17,18 +17,19 @@ import           System.Process
 import           System.IO
 import           Data.List.Split
 import           System.Process
-import           System.FilePath ((</>))
+import           System.FilePath ((</>), takeExtension)
 import           System.Directory (doesDirectoryExist, getDirectoryContents, getCurrentDirectory)
 import           Data.Time.Clock
 
-doWork ::  Integer -> IO String
-doWork n = readProcess "argon" ["bin"] ""
+doWork ::  String -> IO String
+doWork n = readProcess "argon" [n] ""
 
 
 worker :: ( ProcessId, ProcessId) -> Process ()
 worker (manager, workQueue) = do
     us <- getSelfPid              -- get our process identifier
     liftIO $ putStrLn $ "Starting worker: " ++ show us
+   -- liftIO $ callProcess "git" ["clone", "https://github.com/JenningsIRE/file-server-api"]
     go us
   where
     go :: ProcessId -> Process ()
@@ -48,17 +49,17 @@ worker (manager, workQueue) = do
 
 remotable ['worker]
 
-manager :: Integer    -- The number range we wish to generate work for (there will be n work packages)
+manager :: [String]    -- The number range we wish to generate work for (there will be n work packages)
         -> [NodeId]   -- The set of cloud haskell nodes we will initalise as workers
         -> Process String
-manager n workers = do
+manager files workers = do
   us <- getSelfPid
 
   -- first, we create a thread that generates the work tasks in response to workers
   -- requesting work.
   workQueue <- spawnLocal $ do
     -- Return the next bit of work to be done
-    forM_ [1 .. n] $ \m -> do
+    forM_ files $ \m -> do
       pid <- expect   -- await a message from a free worker asking for work
       send pid m     -- send them work
 
@@ -75,7 +76,7 @@ manager n workers = do
   liftIO $ putStrLn $ "[Manager] Workers spawned"
   -- wait for all the results from the workers and return the sum total. Look at the implementation, whcih is not simply
   -- summing integer values, but instead is expecting results from workers.
-  sumIntegers (fromIntegral n)
+  sumIntegers $ length files
 
 -- note how this function works: initialised with n, the number range we started the program with, it calls itself
 -- recursively, decrementing the integer passed until it finally returns the accumulated value in go:acc. Thus, it will
@@ -100,25 +101,39 @@ someFunc = do
 
 
   args <- getArgs
-
+  curr <- getCurrentDirectory
   case args of
     ["manager", host, port, n] -> do
       putStrLn "Starting Node as Manager"
+      callProcess "git" ["clone", "https://github.com/JenningsIRE/file-server-api"]
+      files <- liftIO $ getFilePaths "file-server-api"
       backend <- initializeBackend host port rtable
       start <- getCurrentTime
       startMaster backend $ \workers -> do
-        result <- manager (read n) workers
-        liftIO $ print result
+        result <- manager files workers
+        liftIO $ putStrLn result
       end <- getCurrentTime
       let time = diffUTCTime end start
       putStrLn $ show time
+      callProcess "rm" ["-rf", "file-server-api"]
     ["worker", host, port] -> do
       putStrLn "Starting Node as Worker"
       backend <- initializeBackend host port rtable
       startSlave backend
     _ -> putStrLn "Bad parameters"
 
-
+-- Get Files
+getFilePaths :: FilePath -> IO [FilePath]
+getFilePaths topdir = do
+    names <- getDirectoryContents topdir
+    let properNames = filter (\f -> head f /= '.' && f /= "argon") names
+    paths <- forM properNames $ \name -> do
+        let path = topdir </> name
+        isDirectory <- doesDirectoryExist path
+        if isDirectory
+            then getFilePaths path
+            else return [path]
+    return (concat paths)
   -- create a cloudhaskell node, which must be initialised with a network transport
   -- Right transport <- createTransport "127.0.0.1" "10501" defaultTCPParameters
   -- node <- newLocalNode transport initRemoteTable
