@@ -18,7 +18,7 @@ Argon - https://github.com/rubik/argon
 ##### Details the design and comparative performance over a sample repository set ranging from the small to the large
 
 
-![Results](Time vs Number of Workers.png)
+![alt text](graph.png)
 
 The programme was run on both a small and larg repository using various numbers of workers with each. The number of workers was then plotted against time. 
 At first, as expected, the time went down as the number of workers increased. However, this affect plateaued and the small repository actually took slightly longer to analyse with large numbers of workers.
