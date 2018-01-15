@@ -36,7 +36,7 @@ worker (manager, workQueue) = do
       send workQueue us
       receiveWait
         [ match $ \n  -> do
-       --     liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] given work: " ++ show n
+            liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] given work: " ++ show n
             work <- liftIO $ doWork n
             send manager (work)
             go us
@@ -73,24 +73,23 @@ rtable = Lib.__remoteTable initRemoteTable
 
 someFunc :: IO ()
 someFunc = do
-
   args <- getArgs
-  curr <- getCurrentDirectory
   case args of
     ["manager", host, port, n] -> do
-      callProcess "git" ["clone", "https://github.com/JenningsIRE/file-server-api"]
+      callProcess "git" ["clone", n]
       backend <- initializeBackend host port rtable
-      commits <- getCommits "file-server-api"
+      let x = last (splitOn "/" n)
+      commits <- getCommits x
       start <- getCurrentTime
       startMaster backend $ \workers -> do
         mapM_ (\commit -> do
-          liftIO $ readCreateProcess ((proc "git" ["reset", "--hard", commit]){ cwd = Just "file-server-api"}) ""
-          files <- liftIO $ getPaths "file-server-api"
+          liftIO $ readCreateProcess ((proc "git" ["reset", "--hard", commit]){ cwd = Just x}) ""
+          files <- liftIO $ getPaths x
           manager files workers) commits
       end <- getCurrentTime
       let time = diffUTCTime end start
       putStrLn $ show time
-      callProcess "rm" ["-rf", "file-server-api"]
+      callProcess "rm" ["-rf", x]
     ["worker", host, port] -> do
       backend <- initializeBackend host port rtable
       startSlave backend
